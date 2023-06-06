@@ -7,3 +7,6 @@ jobs:
     steps:
       - name: Auto Request Review
         uses: necojackarc/auto-request-review@v0.12.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          use_local: true
