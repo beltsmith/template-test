@@ -1,0 +1,9 @@
+name: Request reviewers
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [pull_request]
+jobs:
+  request-reviewers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto Request Review
+        uses: necojackarc/auto-request-review@v0.12.0
